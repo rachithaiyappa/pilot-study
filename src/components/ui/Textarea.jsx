@@ -1,13 +1,13 @@
 import React from 'react';
 
-const Textarea = ({ value, onChange, className, placeholder}) => {
+const Textarea = ({ value, onChange, placeholder }) => {
   return (
-    <input
+    <textarea
       value={value}
       onChange={onChange}
       placeholder={placeholder}
-      className={`border p-2 rounded bg-transparent text-lg ${className}`} // Added bg-transparent and text-lg
-      style={{ width: '30%', height: '150px' }} // Added inline styles for default size 
+      className={`border p-4 rounded bg-white text-black w-full`} // white background, black text
+      style={{ width: '20.5%', height: '150px' }}// height remains fixed
     />
   );
 };

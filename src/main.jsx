@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import PilotStudySim from './PilotStudySim';
+import PilotStudySim from './components/PilotStudySim/PilotStudySim';
 import './index.css'; // Ensure you have some basic styles
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

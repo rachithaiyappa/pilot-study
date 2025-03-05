@@ -18,7 +18,10 @@ const ImageUpload = ({ onImageUpload }) => {
 
   return (
     <div>
-      <input type="file" accept="image/*" onChange={handleImageChange} />
+      <label htmlFor="image-upload" style={{ display: 'block', marginBottom: '8px' }}>
+        Upload an image of your product UI
+      </label>
+      <input id="image-upload" type="file" accept="image/*" onChange={handleImageChange} />
       {imagePreview && (
         <div className="mt-4">
           <img src={imagePreview} alt="Uploaded" className="max-w-full h-auto" />

@@ -1,5 +1,3 @@
-// filepath: /Users/rachithaiyappa/Documents/jobs_practice/pilot-study/src/components/ui/CSVUpload.jsx
-
 import React from 'react';
 import Papa from 'papaparse';
 
@@ -18,7 +16,10 @@ const CSVUpload = ({ onFileUpload }) => {
 
   return (
     <div>
-      <input type="file" accept=".csv" onChange={handleFileChange} />
+      <label htmlFor="csv-upload" style={{ display: 'block', marginBottom: '8px' }}>
+        Upload CSV with user demographics
+      </label>
+      <input id="csv-upload" type="file" accept=".csv" onChange={handleFileChange} />
     </div>
   );
 };
